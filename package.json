@@ -1,0 +1,29 @@
+{
+	"name": "next-koa-example",
+	"version": "0.0.1",
+	"description": "Example project for a node server based on NextJS (React server-side rendering) plus KoaJS (API backend).",
+	"main": "server/index.js",
+	"scripts": {
+		"dev": "nodemon -w server/ -e js,json server/index.js",
+		"build": "next build",
+		"start": "next build && NODE_ENV=production node server/index.js",
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"author": "Kevin Romero Peces-Barba",
+	"license": "MIT",
+	"dependencies": {
+		"@zeit/next-sass": "^1.0.1",
+		"koa": "^2.7.0",
+		"koa-router": "^7.4.0",
+		"next": "^7.0.2",
+		"node-sass": "^4.11.0",
+		"react": "^16.7.0",
+		"react-dom": "^16.7.0",
+		"react-redux": "^6.0.0",
+		"terser": "^3.14.1"
+	},
+	"devDependencies": {
+		"eslint": "^5.13.0",
+		"nodemon": "^1.18.9"
+	}
+}
